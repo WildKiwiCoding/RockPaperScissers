@@ -33,6 +33,7 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .image-button {
@@ -41,34 +42,33 @@ body {
     padding: 0;
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2); 
+    width: 140px;  /* Button size */
+    height: 140px;
+    background-color: white;  /* White background for the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.2s;
 }
 
 .image-button:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);  /* Button zoom */
 }
 
 .image-button img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 110px;  /* Image smaller than the button */
+    height: 110px;
+    object-fit: contain;  /* Ensures the image fits without being cut off */
     display: block;
 }
 
- #result {
+#result {
     font-size: 20px;
     font-weight: bold;
     color: #61d0f6;
     margin-top: 20px;
-    min-height: 50px; /* Ensures consistent space for result text */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.button-container {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-    justify-content: center; /* Keeps buttons centered */
 }
