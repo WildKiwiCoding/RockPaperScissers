@@ -42,9 +42,9 @@ body {
     padding: 0;
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2); 
-    width: 140px;  /* Button size */
+    width: 140px;  
     height: 140px;
-    background-color: white;  /* White background for the button */
+    background-color: white; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,13 +52,13 @@ body {
 }
 
 .image-button:hover {
-    transform: scale(1.1);  /* Button zoom */
+    transform: scale(1.1);  
 }
 
 .image-button img {
-    width: 110px;  /* Image smaller than the button */
+    width: 110px;  
     height: 110px;
-    object-fit: contain;  /* Ensures the image fits without being cut off */
+    object-fit: contain; 
     display: block;
 }
 
